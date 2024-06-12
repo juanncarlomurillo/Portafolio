@@ -16,7 +16,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-color: #0fe600;
+    background-color: rgb(96, 95, 95);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -91,7 +91,7 @@ h1 {
 
 /* Estilos de la sección de habilidades */
 .skills {
-    background-color: #0fe600;
+    background-color: rgb(96, 95, 95);
     color: #fff;
     padding: 40px 0;
 }
@@ -249,6 +249,10 @@ h1 {
     box-sizing: border-box;
 }
 
+.projects-grid :hover{
+    scale: 1.10;
+}
+
 .project img {
     width: 50px;
     height: 50px;
@@ -295,4 +299,89 @@ footer {
 
 footer p {
     margin: 0;
+}
+/* Media queries */
+@media only screen and (max-width: 393px) {
+    /* Estilos para dispositivos de 393x852 */
+    .container {
+        padding: 10px;
+    }
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        margin-bottom: 20px;
+    }
+    .project p,
+    .reference p {
+        font-size: 12px; /* Reducimos el tamaño del texto */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .reference,
+    .project {
+        width: calc(100% - 20px); /* Ajustamos el ancho del contenedor */
+    }
+    .skill label {
+        font-size: 10px; /* Reducimos el tamaño del texto */
+    }
+}
+
+@media only screen and (min-width: 394px) and (max-width: 480px) {
+    /* Estilos para dispositivos de 480x1040 */
+    .container {
+        padding: 15px;
+    }
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        margin-bottom: 20px;
+    }
+    .reference,
+    .project {
+        width: calc(100% - 30px); /* Ajustamos el ancho del contenedor */
+    }
+    .reference p {
+        font-size: 14px; /* Aumentamos el tamaño del texto */
+    }
+    .skill label {
+        font-size: 14px; /* Reducimos el tamaño del texto */
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 430px) {
+    /* Estilos para dispositivos de 430x932 */
+    .container {
+        padding: 20px;
+    }
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        margin-bottom: 20px;
+    }
+    .reference,
+    .project {
+        width: calc(100% - 40px); /* Ajustamos el ancho del contenedor */
+    }
+    .reference p {
+        font-size: 16px; /* Aumentamos más el tamaño del texto */
+    }
+    .skill label {
+        font-size: 16px; /* Reducimos el tamaño del texto */
+    }
+}
+
+/* Estilos generales para referencias y proyectos */
+.project p,
+.reference p {
+    font-size: 16px; /* Tamaño de texto original */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
