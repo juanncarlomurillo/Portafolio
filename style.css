@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Estilos del encabezado */
+
 header {
     background-color: rgb(96, 95, 95);
     color: #fff;
@@ -42,7 +42,7 @@ h1 {
     font-weight: 600;
 }
 
-/* Estilos de la sección de perfil */
+
 .profile {
     background-color: #fff;
     padding: 40px 0;
@@ -89,7 +89,7 @@ h1 {
     margin: 0;
 }
 
-/* Estilos de la sección de habilidades */
+
 .skills {
     background-color: rgb(96, 95, 95);
     color: #fff;
@@ -157,7 +157,7 @@ h1 {
     border-radius: 5px;
 }
 
-/* Estilos de la sección de experiencias */
+
 .experiences {
     background-color: #fff;
     padding: 40px 0;
@@ -180,7 +180,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Estilos de la sección de referencias */
+
 .references {
     background-color: #f4f4f4;
     padding: 40px 0;
@@ -219,7 +219,7 @@ h1 {
     font-size: 16px;
 }
 
-/* Estilos de la sección de proyectos */
+
 .projects {
     background-color: #fff;
     padding: 40px 0;
@@ -289,7 +289,7 @@ h1 {
     background-color: #0dc300;
 }
 
-/* Estilos del pie de página */
+
 footer {
     background-color: #333;
     color: #fff;
@@ -300,9 +300,9 @@ footer {
 footer p {
     margin: 0;
 }
-/* Media queries */
+
 @media only screen and (max-width: 393px) {
-    /* Estilos para dispositivos de 393x852 */
+    
     .container {
         padding: 10px;
     }
@@ -315,22 +315,21 @@ footer p {
     }
     .project p,
     .reference p {
-        font-size: 12px; /* Reducimos el tamaño del texto */
+        font-size: 12px; 
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
     .reference,
     .project {
-        width: calc(100% - 20px); /* Ajustamos el ancho del contenedor */
+        width: calc(100% - 20px); 
     }
     .skill label {
-        font-size: 10px; /* Reducimos el tamaño del texto */
+        font-size: 10px; 
     }
 }
 
 @media only screen and (min-width: 394px) and (max-width: 480px) {
-    /* Estilos para dispositivos de 480x1040 */
     .container {
         padding: 15px;
     }
@@ -343,18 +342,18 @@ footer p {
     }
     .reference,
     .project {
-        width: calc(100% - 30px); /* Ajustamos el ancho del contenedor */
+        width: calc(100% - 30px); 
     }
     .reference p {
-        font-size: 14px; /* Aumentamos el tamaño del texto */
+        font-size: 14px; 
     }
     .skill label {
-        font-size: 14px; /* Reducimos el tamaño del texto */
+        font-size: 14px; 
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 430px) {
-    /* Estilos para dispositivos de 430x932 */
+    
     .container {
         padding: 20px;
     }
@@ -367,20 +366,20 @@ footer p {
     }
     .reference,
     .project {
-        width: calc(100% - 40px); /* Ajustamos el ancho del contenedor */
+        width: calc(100% - 40px); 
     }
     .reference p {
-        font-size: 16px; /* Aumentamos más el tamaño del texto */
+        font-size: 16px; 
     }
     .skill label {
-        font-size: 16px; /* Reducimos el tamaño del texto */
+        font-size: 16px; 
     }
 }
 
-/* Estilos generales para referencias y proyectos */
+
 .project p,
 .reference p {
-    font-size: 16px; /* Tamaño de texto original */
+    font-size: 16px; 
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
